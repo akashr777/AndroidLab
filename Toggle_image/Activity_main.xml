@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/img1" />
+
+        <!-- You can add another ImageView if you want to toggle between two images -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/img2"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Image"
+        android:layout_below="@id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
+
